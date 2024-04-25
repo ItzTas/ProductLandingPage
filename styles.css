@@ -1,0 +1,584 @@
+:root {
+  --color1: rgb(208, 55, 195);
+  --color2: rgb(186, 46, 117);
+  --color3: rgb(189, 45, 68);
+  --color4: rgb(211, 77, 40);
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: rgb(10, 10, 20);
+  color: white;
+}
+
+h1 {
+  font-size: 2.86rem;
+}
+
+h1:hover {
+  color: steelblue;
+}
+
+#nav-bar img {
+  width: 17rem;
+  height: 10rem;
+  border-radius: 10px;
+  z-index: 10;
+}
+
+#nav-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+#nav-bar a {
+  text-decoration: none;
+  color: white;
+}
+
+#nav-bar a:hover {
+  background-color: white;
+  color: darkblue;
+}
+
+#nav-bar a:active {
+  background-color: orange;
+}
+
+#nav-bar:hover {
+  background-color: rgb(10, 10, 10);
+}
+
+#nav-bar span {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 50vw;
+  min-width: 30rem;
+}
+
+.main-header {
+  width: 100%;
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 13.5rem;
+}
+
+.main-header input {
+  text-align: center;
+  background-color: black;
+  border: 1px solid rgb(60, 60, 150);
+  padding: 7px 17px;
+}
+
+.main-header button {
+  margin-top: 4px;
+  font-weight: 900;
+  padding: 7px 13px;
+  background-color: rgb(70, 70, 200);
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.main-header button:hover {
+  filter: brightness(140%);
+}
+
+.main-header button:active {
+  filter: brightness(200%);
+}
+
+.advantages img {
+  display: block;
+  margin: 120px auto 20px auto;
+  border-radius: 1rem;
+  transition: filter 0.5s;
+}
+
+.advantages img:hover {
+  filter: brightness(60%);
+}
+
+.advantages h3:hover {
+  color: orangered;
+}
+
+.features-icon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  position: relative;
+  background: linear-gradient(
+    var(--color1),
+    var(--color2),
+    var(--color3),
+    var(--color4)
+  );
+  min-width: 4rem;
+}
+
+.features-icon .black-ball {
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+  position: absolute;
+  width: 3.1rem;
+  height: 3.1rem;
+  background-color: black;
+}
+
+.black-ball div {
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  background: linear-gradient(
+    var(--color1),
+    var(--color2),
+    var(--color3),
+    var(--color4)
+  );
+  position: absolute;
+}
+
+.black-ball div:hover {
+  background: inherit;
+}
+
+.features-icon:hover {
+  background: inherit;
+}
+
+features-icon .black-ball:hover {
+  background: inherit;
+}
+
+.features,
+.pricing-nav,
+.how-nav {
+  display: flex;
+  align-items: center;
+}
+
+.features .features-icon {
+  width: 3rem;
+  height: 3rem;
+  min-width: 3rem;
+}
+
+.features .features-icon .black-ball {
+  width: 2.1rem;
+  height: 2.1rem;
+}
+
+.features .black-ball div {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.advantages-article {
+  margin: 10rem 30rem 0 9rem;
+}
+
+.advantages-header {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 10rem;
+}
+
+.advantages-header h2::before {
+  content: "°";
+}
+
+.advantages-header h2::after {
+  content: ":";
+}
+
+.advantages-header:hover {
+  color: orange;
+}
+
+.features-icon-text h3 {
+  font-size: 3.4rem;
+}
+
+.features-icon-text p {
+  font-size: 1.4rem;
+}
+
+.features-icon-text {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 2.8rem;
+}
+
+.text-wrap {
+  margin-top: -9px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.darker-bg {
+  background-color: rgba(5, 5, 8, 1);
+  padding: 1rem 0 10rem 0;
+}
+
+.pricing-icon {
+  background: linear-gradient(
+    var(--color1),
+    var(--color2),
+    var(--color3),
+    var(--color4)
+  );
+  width: 4rem;
+  height: 4rem;
+  min-width: 4rem;
+  border-radius: 50%;
+  position: relative;
+  transform: rotate(-90deg);
+}
+
+.pricing-icon .inner-moon {
+  position: absolute;
+  border-bottom: 2rem solid transparent;
+  border-top: 2rem solid transparent;
+  border-right: 2.7rem solid rgba(5, 5, 8, 1);
+  right: 0;
+}
+
+.pricing-icon:hover {
+  background: inherit;
+}
+
+.pricing-nav .pricing-icon {
+  min-width: 3.6rem;
+}
+
+.pricing-nav .inner-moon {
+  min-width: 3.6rem;
+  border-bottom: 1.8rem solid transparent;
+  border-top: 1.8rem solid transparent;
+  border-right: 2.5rem solid black;
+  top: 0.2rem;
+}
+
+.pricing-nav .inner-moon:hover {
+  border-right: 2.5rem solid white;
+}
+
+iframe {
+  width: 98vw;
+  height: 100vh;
+  margin: auto;
+  display: block;
+  transition: filter 5s;
+}
+
+iframe:hover {
+  filter: brightness(60%);
+}
+
+.text-wrap a:nth-of-type(1) {
+  text-decoration: none;
+  font-size: 2.2rem;
+  color: rgb(180, 90, 180);
+}
+
+.text-wrap p {
+  font-size: 1.5rem;
+}
+
+.text-wrap a:nth-of-type(1):hover {
+  color: steelblue;
+  background-color: pink;
+}
+
+.how-icon {
+  width: 4rem;
+  height: 4rem;
+  background: linear-gradient(
+    var(--color1),
+    var(--color2),
+    var(--color3),
+    var(--color4)
+  );
+  border-radius: 0 0 70% 70%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 4rem;
+}
+
+.how-icon .how-icon-background {
+  position: absolute;
+  border-right: 1.4rem solid transparent;
+  border-left: 1.4rem solid transparent;
+  border-bottom: 1.6rem solid rgb(70, 70, 200);
+  transform: rotate(180deg);
+}
+
+.how-nav .how-icon {
+  width: 3.1rem;
+  min-width: 3.1rem;
+  height: 3.6rem;
+}
+
+.how-nav .how-icon .how-icon-background {
+  border-right: 0.8rem solid transparent;
+  border-left: 0.8rem solid transparent;
+  border-bottom: 1rem solid rgb(70, 70, 200);
+}
+
+.features .black-ball:hover {
+  background-color: white;
+}
+
+.how-icon:hover,
+.how-icon .how-icon-background:hover {
+  background: inherit;
+}
+
+.how-icon-background:hover {
+  border-bottom: 1.6rem solid rgba(5, 5, 8, 1);
+}
+
+.how-nav .how-icon .how-icon-background:hover {
+  border-bottom: 1rem solid white;
+}
+
+.advantages hr {
+  display: none;
+  border-color: white;
+}
+
+.cards {
+  margin: 10rem 0;
+}
+
+[class*="card"]:not(.cards, .cards-section) {
+  background-color: rgba(70, 70, 200, 0.1);
+  width: 25rem;
+  height: 27rem;
+  border: 2px solid black;
+  transition: width 0.5s, height 0.5s;
+  text-align: center;
+}
+
+[class*="card"] h3 {
+  font-size: 2rem;
+  font-weight: normal;
+  padding: 0.6rem 0;
+  background-color: rgba(200, 200, 200, 0.1);
+  color: rgba(255, 255, 255, 0.69);
+}
+
+[class*="card"] h4 {
+  font-size: 1.8rem;
+  font-weight: 900;
+  margin: 1.4rem 0;
+}
+
+[class*="card"]:not(.cards, .cards-section):hover {
+  width: 28rem;
+  height: 29.5rem;
+  filter: brightness(115%);
+}
+
+[class*="card"]:not(.cards, .cards-section):active {
+  filter: brightness(150%);
+}
+
+[class*="card"] ul {
+  list-style-type: circle;
+  list-style-position: inside;
+}
+
+[class*="card"] ul li {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.cards-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8rem;
+}
+
+.cards-section h2 {
+  font-size: 4rem;
+  color: orangered;
+}
+
+.cards-section > header {
+  text-align: center;
+}
+
+[class*="card"] button {
+  margin-top: 2rem;
+  padding: 0.9rem 1.8rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: steelblue;
+}
+
+[class*="card"] button:hover {
+  filter: brightness(140%);
+}
+
+[class*="card"] button:active {
+  filter: brightness(180%);
+}
+
+.cards {
+  display: flex;
+  width: 45%;
+  min-width: 80rem;
+  justify-content: space-around;
+}
+
+footer {
+  background-color: grey;
+  width: 60vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.6rem;
+  padding: 0.7rem;
+}
+
+footer h6 {
+  font-size: 1.3rem;
+}
+
+footer p {
+  font-size: 1.2rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: purple;
+}
+
+footer div {
+  display: flex;
+  justify-content: space-between;
+  width: 14rem;
+}
+
+footer input {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .advantages img {
+    width: 80vw;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    height: calc(27rem * 3 + 5rem);
+  }
+}
+
+@media (max-width: 720px) {
+  .advantages hr {
+    display: block;
+    width: 100vw;
+    margin: 0 0 3rem -9rem;
+  }
+
+  #nav-bar {
+    font-size: 1.3rem;
+  }
+
+  #nav-bar img {
+    width: 10rem;
+    height: 7.9rem;
+  }
+
+  iframe {
+    width: 40vw;
+    height: 30vh;
+    min-width: 25rem;
+    min-height: 7rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .features .features-icon {
+    display: none;
+  }
+
+  .pricing-nav .pricing-icon {
+    display: none;
+  }
+
+  .advantages h2 {
+    font-size: 2.2rem;
+  }
+
+  .advantages {
+    text-align: center;
+  }
+
+  .features-icon-text {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 30vw;
+  }
+
+  .advantages h3:after {
+    content: ":";
+  }
+
+  .how-nav .how-icon {
+    display: none;
+  }
+
+  .text-wrap h3 {
+    text-align: center;
+  }
+}
